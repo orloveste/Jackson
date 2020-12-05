@@ -1,7 +1,10 @@
 package person;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Person {
     private Integer id;
+    @JsonProperty("nume")
     private String name;
 
     public Integer getId() {
