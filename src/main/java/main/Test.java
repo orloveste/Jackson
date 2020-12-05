@@ -14,5 +14,11 @@ public class Test {
         String json = objectMapper.writeValueAsString(person);
 
         System.out.println(json);
+
+        // invers din text faci obiect java
+        String text="{\"id\":1,\"name\":\"ghita\"}";
+
+        Person personFromText = objectMapper.readValue(text, Person.class);
+        System.out.println(personFromText);
     }
 }
