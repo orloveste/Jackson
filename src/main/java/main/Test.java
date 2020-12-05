@@ -10,6 +10,9 @@ public class Test {
         person.setId(1);
 
         ObjectMapper objectMapper = new ObjectMapper(); // deserializare
-        objectMapper.writeValueAsString(person)
+
+        String json = objectMapper.writeValueAsString(person);
+
+        System.out.println(json);
     }
 }
